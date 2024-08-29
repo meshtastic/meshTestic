@@ -22,5 +22,8 @@
     "sinon": "^18.0.0",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@meshtastic/js": "2.3.7-2"
   }
 }
