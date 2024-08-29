@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "compile": "tsc --declaration",
     "lint": "tslint --project tsconfig.json",
-    "prepublish": "npm run compile",
-    "test": "mocha"
-  },
-  "directories": {
-    "lib": "./lib",
-    "src": "./src",
-    "test": "./src"
+    "prepublish": "tsc --declaration && npm run compile",
+    "test": "mocha --import=tsx"
   },
   "keywords": [],
   "author": "meshtestic",
@@ -24,7 +20,7 @@
     "chai": "^5.1.1",
     "mocha": "^10.7.3",
     "sinon": "^18.0.0",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   }
 }
