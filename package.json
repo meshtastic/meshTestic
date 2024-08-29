@@ -1,0 +1,30 @@
+{
+  "name": "meshtestic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --declaration",
+    "lint": "tslint --project tsconfig.json",
+    "prepublish": "npm run compile",
+    "test": "mocha"
+  },
+  "directories": {
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./src"
+  },
+  "keywords": [],
+  "author": "meshtestic",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/chai": "^4.3.19",
+    "@types/mocha": "^10.0.7",
+    "@types/sinon": "^17.0.3",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "sinon": "^18.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
