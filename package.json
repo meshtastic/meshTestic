@@ -8,7 +8,7 @@
     "compile": "tsc --declaration",
     "lint": "tslint --project tsconfig.json",
     "prepublish": "tsc --declaration && npm run compile",
-    "test": "mocha --import=tsx"
+    "test": "mocha --import=tsx --timeout 15000"
   },
   "keywords": [],
   "author": "meshtestic",
@@ -19,11 +19,13 @@
     "@types/sinon": "^17.0.3",
     "chai": "^5.1.1",
     "mocha": "^10.7.3",
+    "serialport": "^12.0.0",
     "sinon": "^18.0.0",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "@buf/meshtastic_protobufs.bufbuild_es": "1.10.0-20240830181819-a1c415203b72.1",
     "@meshtastic/js": "2.3.7-2"
   }
 }
