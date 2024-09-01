@@ -5,9 +5,9 @@ import {
 } from 'mocha';
 import sinon from 'sinon';
 
-import { DiscoverDevices } from './discover';
-import { ConnectedNode } from './node';
-import { PromiseTimeout } from './util';
+import { DiscoverDevices } from '../src/discover';
+import { ConnectedNode } from '../src/node';
+import { PromiseTimeout } from '../src/util';
 
 const TEN_SECONDS = 10000;
 const devices = await DiscoverDevices()

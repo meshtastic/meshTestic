@@ -1,0 +1,16 @@
+[
+    {
+        "pio_env": "rak4631",
+        "arch": "nrf52",
+        "manufacturer": "Microsoft",
+        "vendorId": "239A",
+        "productId": "8029"
+    },
+    {
+        "pio_env": "heltec_v3",
+        "arch": "esp32",
+        "manufacturer": "Silicon Labs",
+        "vendorId": "10C4",
+        "productId": "EA60"
+    }
+]

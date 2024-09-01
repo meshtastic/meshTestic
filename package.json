@@ -8,7 +8,8 @@
     "compile": "tsc --declaration",
     "lint": "tslint --project tsconfig.json",
     "prepublish": "tsc --declaration && npm run compile",
-    "test": "mocha --import=tsx --timeout 15000 --fail-zero --exit"
+    "test": "mocha --import=tsx --timeout 15000 --fail-zero --exit",
+    "setup": "node --import=tsx src/setup.ts"
   },
   "keywords": [],
   "author": "meshtestic",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/chai": "^4.3.19",
     "@types/mocha": "^10.0.7",
+    "@types/node": "^22.5.2",
     "@types/sinon": "^17.0.3",
     "chai": "^5.1.1",
     "mocha": "^10.7.3",
