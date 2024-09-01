@@ -1,10 +1,12 @@
 import time
 import sys
-
+import os
 import flash
 import meshtastic
 import meshtastic.serial_interface
 from readprops import readProps
+
+os.chdir("../")
 
 version = readProps("version.properties")["long"]
 
