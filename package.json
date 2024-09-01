@@ -8,7 +8,7 @@
     "compile": "tsc --declaration",
     "lint": "tslint --project tsconfig.json",
     "prepublish": "tsc --declaration && npm run compile",
-    "test": "mocha --import=tsx --timeout 15000"
+    "test": "mocha --import=tsx --timeout 15000 --exit"
   },
   "keywords": [],
   "author": "meshtestic",
