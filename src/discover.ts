@@ -21,9 +21,9 @@ export async function DiscoverDevices() : Promise<Array<DiscoveredDevice>> {
     const discoveredDevices = new Array<DiscoveredDevice>();
     ports.forEach(port => {
         const foundDevice = devicesJson.find(d => {
-            const matchesManufacture = d.manufacturer ? d.manufacturer && port.manufacturer && d.manufacturer === port.manufacturer : true;
-            const matchesVendorId = d.vendorId ? d.vendorId && port.vendorId && port.vendorId.startsWith(d.vendorId) : true;
-            const matchesProductId = d.productId ? d.productId && port.productId && port.productId.startsWith(d.productId) : true;
+            const matchesManufacture = d.manufacturer ? d.manufacturer && port.manufacturer && d.manufacturer.toLowerCase() === port.manufacturer.toLowerCase() : true;
+            const matchesVendorId = d.vendorId ? d.vendorId && port.vendorId && port.vendorId.toLowerCase().startsWith(d.vendorId.toLowerCase()) : true;
+            const matchesProductId = d.productId ? d.productId && port.productId && port.productId.toLowerCase().startsWith(d.productId.toLowerCase()) : true;
 
             return matchesManufacture && matchesVendorId && matchesProductId;
         });
